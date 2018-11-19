@@ -634,6 +634,8 @@ pre tt:after {
   grid-template-columns: 50% 1fr;      
 }
 
+
+
 .about ul {
   list-style: none;  
   margin: 0;
@@ -659,13 +661,10 @@ pre tt:after {
 }
 
 .about__text {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   max-width: 500px;  
   margin: 0 auto;    
 }
-
-
-
 
 
 
@@ -773,6 +772,33 @@ pre tt:after {
   align-items: center;  
   padding: 0 1rem;
 }
+
+
+
+@media(max-width:700px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about__img {
+    min-height: 70vh;
+  }
+
+  .landing {
+    flex-direction: column;
+  }
+
+  .landing__container {
+    min-height: 90vh;
+  }
+
+  .landing__link {
+    margin-top: 2rem;
+  }
+
+}
+
+
 
 .navbar {
   color: #fafafa;
