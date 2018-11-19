@@ -23,14 +23,15 @@ const SecondPage = () => (
         <div className="about">
           <div className="about__img">
             <Img
+              className="about__img-img"
               style={{
                 // maxWidth:"20%",                
                 position: "absolute",
                 zIndex: "-1",
                 top: "0",
-                bottom: "0",
+                // bottom: "0",
                 right: "0",
-                left: "0"
+                left: "0",
               }}
               fluid={data.aboutImage.childImageSharp.fluid} />
           </div>

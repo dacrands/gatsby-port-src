@@ -773,6 +773,18 @@ pre tt:after {
   padding: 0 1rem;
 }
 
+.about__img-img {
+  position: absolute;
+  z-index: -1;
+  top: 0;  
+  right: 0;
+}
+
+@media(min-width:700px) {
+  .about__img-img {    
+    bottom: 0;    
+  }
+}
 
 
 @media(max-width:700px) {
@@ -781,7 +793,8 @@ pre tt:after {
   }
 
   .about__img {
-    min-height: 70vh;
+    min-height: 60vh;
+    overflow: hidden;
   }
 
   .landing {
@@ -795,6 +808,8 @@ pre tt:after {
   .landing__link {
     margin-top: 2rem;
   }
+
+
 
 }
 
