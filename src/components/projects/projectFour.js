@@ -38,9 +38,15 @@ const ProjectOne = () => (
           opportunities, and department information
           for the STEM program at Bergen Community College.
         </p>
-        <a href="">Site</a>
-        <a href="">Github</a>
-      </div>        
+        <div className="card__links">
+          <div className="card__links-item">
+            <a href="https://www.bergenstem.com">Website</a>
+          </div>          
+          <div className="card__links-item">
+            <a href="">Github</a>
+          </div>                    
+        </div>     
+      </div>            
     </div>
     }
   />

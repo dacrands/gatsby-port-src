@@ -34,7 +34,16 @@ const ProjectTwo = () => (
             GatsbyJS blog hosted on gitpages. Features
             a markdown CMS that implements YAML front matter.
         </p>
+        <div className="card__links">
+          <div className="card__links-item">
+            <a href="https://www.bergenstem.com">Website</a>
+          </div>          
+          <div className="card__links-item">
+            <a href="">Github</a>
+          </div>                    
         </div>
+        </div>
+        
       </div>
     }
   />

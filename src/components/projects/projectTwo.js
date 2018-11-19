@@ -38,6 +38,15 @@ const ProjectTwo = () => (
             see the top sellers, view today's most shared news
             stories.
         </p>
+        <div className="card__links">
+          <div className="card__links-item">
+            <a href="https://www.bergenstem.com">Website</a>
+          </div>          
+          <div className="card__links-item">
+            <a href="">Github</a>
+          </div>  
+        </div>
+                          
         </div>
         
     </div>

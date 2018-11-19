@@ -6,6 +6,7 @@ const Navbar = () => (
         <div className="nav__container">
             <div className="nav__link">
                 <Link
+                    activeStyle={{color:"#ebd039"}}
                     style={{
                         color: "white",
                         textDecoration: "none"
@@ -16,6 +17,7 @@ const Navbar = () => (
             </div>
             <div className="nav__link">
                 <Link
+                    activeStyle={{color:"#ebd039"}}
                     style={{
                         color: "white",
                         textDecoration: "none"

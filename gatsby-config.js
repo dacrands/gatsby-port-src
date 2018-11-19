@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/dacrands/gatsby-port",
   siteMetadata: {
     title: `Dave's Watch Blog`,
   },
