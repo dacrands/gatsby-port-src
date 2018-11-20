@@ -24,12 +24,10 @@ const SecondPage = () => (
           <div className="about__img">
             <Img
               className="about__img-img"
-              style={{
-                // maxWidth:"20%",                
+              style={{                              
                 position: "absolute",
                 zIndex: "-1",
-                top: "0",
-                // bottom: "0",
+                top: "0",                
                 right: "0",
                 left: "0",
               }}
@@ -38,12 +36,7 @@ const SecondPage = () => (
           <div className="about__text">
             <div>
             <h1>Hello</h1>
-            <p>
-              <strong>
-                Programming is my favorite
-                thing to do.
-              </strong>              
-            </p>
+            <h3>I love to program</h3>
             <p>
               I've always been mystified by the
               browser. How does it work? 
@@ -52,7 +45,8 @@ const SecondPage = () => (
               with the enigmatic nature of the internet that drives
               me to build websites.
             </p>
-            <h3>Full stack developer</h3>
+            <h1>Full stack developer</h1>
+            <h3>React/Flask</h3>
             <p>
               I really wanted to be a either a backend 
               developer or a frontend developer. 
@@ -61,7 +55,8 @@ const SecondPage = () => (
               such luck. That's why I am a full-stack developer &mdash; 
               because it's too much fun doing both.
             </p>
-            <h3>Skills</h3>
+            <h1>Skills</h1>
+            <h3>What I do</h3>
             <ul>
               <li>
                 <strong>General:</strong> Ajax, RESTful APIs, 

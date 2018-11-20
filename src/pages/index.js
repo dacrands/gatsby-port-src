@@ -7,6 +7,7 @@ import ProjectOne from '../components/projects/projectOne'
 import ProjectTwo from '../components/projects/projectTwo'
 import ProjectThree from '../components/projects/projectThree'
 import ProjectFour from '../components/projects/projectFour'
+import ProjectFive from '../components/projects/projectFive'
 
 
 const IndexPage = ({ data }) => (
@@ -31,11 +32,10 @@ const IndexPage = ({ data }) => (
             From responsive web-design to user authentication,
             I love all aspects of building a website.
           My primary tools are <strong>React</strong> and <strong>Flask</strong>.
-        </p>
-          <br />
-          <p>Thanks for stopping by!</p>
+          Thanks for stopping by!</p>
         </div>
 
+        
 
         {/* <h3>I build websites that are out 
           of this world
@@ -53,6 +53,33 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </div>
+
+    <div className="info">
+          <div className="info__item">
+            <h1>Frontend</h1>
+            <p>
+              My sites are fast, responsive, and
+              accessible.
+              I spend most of time developing
+              with <strong>React.</strong> This
+              site uses <strong>GatsbyJS</strong>,
+              a React static site generator. I 
+              also use templates, e.g., <strong>Jinja2.</strong>
+            </p>
+          </div>
+          <div className="stick"></div>
+          <div className="info__item">
+            <h1>Backend</h1>
+            <p>
+              I build <strong>Flask</strong> apps that
+              use <strong>postgresql</strong> databases. 
+              My applications 
+              feature <strong>email-authentication (sendgrid), JSON Web Tokens,
+              </strong> and <strong>Bcrypt.</strong> 
+
+            </p>
+          </div>
+        </div>
     <div
       style={{
         display: "flex",
@@ -69,6 +96,7 @@ const IndexPage = ({ data }) => (
       <ProjectFour />
       <ProjectTwo />
       <ProjectThree />
+      <ProjectFive />
       {/* <ProjectThree />
       <ProjectThree /> */}
     </div>
