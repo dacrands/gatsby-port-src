@@ -19,18 +19,19 @@ const ProjectFive = () => (
     <div
     className="card"
     >
-      <div className="card__text">
+      <div className="card__title">
       <h3>Portfolio Site</h3>
-        <p>
-          <em>GatsbyJS, Netlify</em>
-          </p>           
+                  
       </div>
         <Img 
         style={{
             marginBottom: "0.5rem"
         }}
         fluid={data.fifthImage.childImageSharp.fluid} />
-        <div className="card__text">      
+        <div className="card__text">  
+        <p>
+          <em>GatsbyJS, Netlify</em>
+          </p>     
         <p>
             Read articles dating back to the year 1800,
             see the top sellers, view today's most shared news
@@ -38,7 +39,7 @@ const ProjectFive = () => (
         </p>
         <div className="card__links">
           <div className="card__links-item">
-            <a href="https://www.bergenstem.com">Website</a>
+            <a href="/">Website</a>
           </div>          
           <div className="card__links-item">
             <a href="">Github</a>

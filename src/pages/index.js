@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
+import Info from '../components/info'
 import ProjectOne from '../components/projects/projectOne'
 import ProjectTwo from '../components/projects/projectTwo'
 import ProjectThree from '../components/projects/projectThree'
@@ -27,66 +28,40 @@ const IndexPage = ({ data }) => (
       <div className="landing">
         <div>
           <h1>David Crandall</h1>
-          <h3>Full-stack developer</h3>
+          <h3>React / Flask developer</h3>
           <p>
             From responsive web-design to user authentication,
             I love all aspects of building a website.
-          My primary tools are <strong>React</strong> and <strong>Flask</strong>.
-          Thanks for stopping by!</p>
-        </div>
-
+          {/* I mostly use <strong>React</strong> and <strong>Flask</strong>. */}
+          </p>
         
-
-        {/* <h3>I build websites that are out 
-          of this world
-        </h3> */}
+          <small class="cite">
+          <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Vectorpocket - Freepik.com</a>
+          </small>                 
+        </div>
         
         <div className="landing__center">        
-        <div className="landing__link">
-          <a href="https://dacrands.github.io" >
-            Blog <span>&rsaquo;</span>
-          </a>
-          <a href="https://github.com/dacrands">
-            Github <span>&rsaquo;</span>
-          </a>
-        </div>
+          <div className="landing__link">
+            <a href="https://dacrands.github.io" >
+              Blog <span>&rsaquo;</span>
+            </a>
+            <a href="https://github.com/dacrands">
+              Github <span>&rsaquo;</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div className="info">
-          <div className="info__item">
-            <h1>Frontend</h1>
-            <p>
-              My sites are fast, responsive, and
-              accessible.
-              I spend most of time developing
-              with <strong>React.</strong> This
-              site uses <strong>GatsbyJS</strong>,
-              a React static site generator. I 
-              also use templates, e.g., <strong>Jinja2.</strong>
-            </p>
-          </div>
-          <div className="stick"></div>
-          <div className="info__item">
-            <h1>Backend</h1>
-            <p>
-              I build <strong>Flask</strong> apps that
-              use <strong>postgresql</strong> databases. 
-              My applications 
-              feature <strong>email-authentication (sendgrid), JSON Web Tokens,
-              </strong> and <strong>Bcrypt.</strong> 
-
-            </p>
-          </div>
-        </div>
+    <Info />
+    
     <div
+    className="projects"
       style={{
         display: "flex",
         flexFlow: "wrap",
         justifyContent: "center",
         alignItems: "flex-start",
-        backgroundColor: "#f1f1f1",
         paddingTop: "1rem",
         paddingBottom: "1rem"
       }}
@@ -100,13 +75,6 @@ const IndexPage = ({ data }) => (
       {/* <ProjectThree />
       <ProjectThree /> */}
     </div>
-    {/* {
-        data.images.edges.map(node => {
-
-          return <Img 
-          fluid={node.node.childImageSharp.fluid} />
-        })
-      }                  */}
   </Layout>
 )
 

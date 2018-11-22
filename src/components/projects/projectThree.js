@@ -17,12 +17,8 @@ const ProjectTwo = () => (
     `}
     render={data =>
       <div className="card">
-        <div className="card__text">
-          <h3>My Blog</h3>
-          <p>
-            <em>
-              GatsbyJS, Markdown, Gitpages
-            </em></p>
+        <div className="card__title">
+          <h3>My Blog</h3>          
         </div>
         <Img
           style={{
@@ -31,15 +27,19 @@ const ProjectTwo = () => (
           fluid={data.secondImage.childImageSharp.fluid} />
         <div className="card__text">
         <p>
+          <em>
+            GatsbyJS, Markdown, Gitpages
+          </em></p>
+        <p>
             GatsbyJS blog hosted on gitpages. Features
             a markdown CMS that implements YAML front matter.
         </p>
         <div className="card__links">
           <div className="card__links-item">
-            <a href="https://www.bergenstem.com">Website</a>
+            <a href="https://dacrands.github.io/">Website</a>
           </div>          
           <div className="card__links-item">
-            <a href="">Github</a>
+            <a href="https://github.com/dacrands/gatsby-blog">Github</a>
           </div>                    
         </div>
         </div>

@@ -19,12 +19,9 @@ const ProjectTwo = () => (
     <div
     className="card"
     >
-      <div className="card__text">
+      <div className="card__title">
       <h3>NYT App</h3>
-        <p>
-          <em>React, Redux, Redux-thunk, 
-            Webpack, Sass</em>
-          </p>           
+                
       </div>
         <Img 
         style={{
@@ -32,7 +29,10 @@ const ProjectTwo = () => (
         }}
         fluid={data.secondImage.childImageSharp.fluid} />
         <div className="card__text">
-      
+        <p>
+          <em>React, Redux, Redux-thunk, 
+            Webpack, Sass</em>
+          </p>  
         <p>
             Read articles dating back to the year 1800,
             see the top sellers, view today's most shared news
@@ -40,10 +40,10 @@ const ProjectTwo = () => (
         </p>
         <div className="card__links">
           <div className="card__links-item">
-            <a href="https://www.bergenstem.com">Website</a>
+            <a href="http://nytcrands.herokuapp.com/">Website</a>
           </div>          
           <div className="card__links-item">
-            <a href="">Github</a>
+            <a href="https://github.com/dacrands/times-app">Github</a>
           </div>  
         </div>
                           
