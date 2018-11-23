@@ -15,6 +15,12 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+          include: /images/
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Dave's watch blog`,
