@@ -8,7 +8,7 @@ const ProjectFive = () => (
       query {
         fifthImage: file(relativePath: { eq: "gatsby-port.JPG" }) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -19,17 +19,14 @@ const ProjectFive = () => (
     <div
     className="card"
     >
-      <div className="card__title">
-      <h3>Portfolio Site</h3>
-                  
-      </div>
         <Img 
         style={{
-            marginBottom: "0.5rem"
+            
         }}
         fluid={data.fifthImage.childImageSharp.fluid} />
         <div className="card__text">  
         <p>
+          <h3>Portfolio Site</h3>
           <em>GatsbyJS, Netlify</em>
           </p>     
         <p>

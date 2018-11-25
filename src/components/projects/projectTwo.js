@@ -8,7 +8,7 @@ const ProjectTwo = () => (
       query {
         secondImage: file(relativePath: { eq: "nyt.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -19,17 +19,14 @@ const ProjectTwo = () => (
     <div
     className="card"
     >
-      <div className="card__title">
-      <h3>NYT App</h3>
-                
-      </div>
         <Img 
         style={{
             marginBottom: "0.5rem"
         }}
         fluid={data.secondImage.childImageSharp.fluid} />
         <div className="card__text">
-        <p>
+        <h3>NYT App</h3>
+        <p>        
           <em>React, Redux, Redux-thunk, 
             Webpack, Sass</em>
           </p>  

@@ -8,7 +8,7 @@ const ProjectOne = () => (
       query {
         firstImage: file(relativePath: { eq: "toview.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -19,15 +19,13 @@ const ProjectOne = () => (
       <div
         className="card"
       >
-        <div className="card__title">
-          <h3>To View It</h3>
-        </div>
         <Img
           style={{
             marginBottom: "0.5rem"
           }}
           fluid={data.firstImage.childImageSharp.fluid} />
         <div className="card__text">
+        <h3>To View It</h3>
           <p>
             <em>Flask, Postgresql, Sendgrid (email client), <br />
               JSON Web Tokens, Bcrypt, Heroku hosting

@@ -8,7 +8,7 @@ const ProjectTwo = () => (
       query {
         secondImage: file(relativePath: { eq: "blog.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -17,15 +17,13 @@ const ProjectTwo = () => (
     `}
     render={data =>
       <div className="card">
-        <div className="card__title">
-          <h3>My Blog</h3>          
-        </div>
         <Img
           style={{
             marginBottom: "0.5rem"
           }}
           fluid={data.secondImage.childImageSharp.fluid} />
         <div className="card__text">
+        <h3>My Blog</h3> 
         <p>
           <em>
             GatsbyJS, Markdown, Gitpages

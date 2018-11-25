@@ -58,21 +58,25 @@ const IndexPage = ({ data }) => (
 
     <Info />
 
-<div className="projects__container">
+    <div className="projects__container">
+      <div className="projects__desc">
+        <div className="container">
+          <h1>Projects</h1>
+          <h3>These are some of the projects I have built.</h3>
+        </div>
+      </div>
+      <div className="projects container">
+        <ProjectOne />
+        <ProjectFour />
+        <ProjectTwo />
+        <ProjectThree />
+        <ProjectFive />
+      </div>
+    </div>
 
-<div
-    className="projects">     
-    <ProjectOne />
-    <ProjectFour />
-    <ProjectTwo />
-    <ProjectThree />
-    <ProjectFive />
-  </div>
-</div>
-    
     <div className="contact__container">
-    <Saturn className="contact__svg saturn" />
-    <Satellite className="contact__svg satellite" />
+      <Saturn className="contact__svg saturn" />
+      <Satellite className="contact__svg satellite" />
       <div className="contact">
         <h1>Contact me</h1>
         <form action="">
